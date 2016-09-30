@@ -1,0 +1,11 @@
+<div class="row" ng-repeat="book in allbooks">
+    <div class="books">
+        <div class="col-lg-3 book-logo">
+            <img src={{book.logo_url}} alt="book logo"/>
+        </div>
+        <div class="col-lg-9 book-description">
+            <p class="text-justify" ng-bind = "book.description">
+            </p>
+        </div>
+    </div>
+</div>

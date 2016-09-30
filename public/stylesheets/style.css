@@ -1,0 +1,38 @@
+body {
+   background-color: white;
+   margin: 0 !important;
+   padding: 0 !important;
+}
+.logo .logo-left{
+  color: rgba(198, 10, 16, 0.47);
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.logo .logo-right{
+  color: rgba(85, 87, 77, 0.75);
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.books{
+  border: 1px solid;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.books .book-logo img{
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  margin-right: 0;
+}
+
+.books .book-description p{
+  margin: 5px;
+  /*margin-left: -50px;*/
+}

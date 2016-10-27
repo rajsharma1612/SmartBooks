@@ -4,24 +4,54 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-default: &default
-  adapter: mysql2
-  encoding: utf8
-  database: SmartBooks
-  username: root
-  password: admin
-  host: 127.0.0.1
-  port: 3306
-
-development:
-  adapter: mysql2
-  encoding: utf8
-  database: SmartBooks
-  username: root
-  password: admin
-  host: 127.0.0.1
-  port: 3306
+# default: &default
+#   adapter: mysql2
+#   encoding: utf8
+#   database: SmartBooks
+#   username: root
+#   password: admin
+#   host: 127.0.0.1
+#   port: 3306
+#
+# development:
+#   adapter: mysql2
+#   encoding: utf8
+#   database: SmartBooks
+#   username: root
+#   password: admin
+#   host: 127.0.0.1
+#   port: 3306
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
+default: &default
+   adapter: postgresql
+   encoding: unicode
+
+development:
+   adapter: postgresql
+   encoding: unicode
+   database: smartbooks_development
+   username: rajsharma1612
+   password: rajsharma1612
+   host: localhost
+   pool: 5
+
+test:
+   adapter: postgresql
+   encoding: unicode
+   database: smartbooks_test
+   username: rajsharma1612
+   password: rajsharma1612
+   host: localhost
+   pool: 5
+
+production:
+   adapter: postgresql
+   encoding: unicode
+   database: smartbooks_production
+   username: rajsharma1612
+   password: rajsharma1612
+   host: localhost
+   pool: 5

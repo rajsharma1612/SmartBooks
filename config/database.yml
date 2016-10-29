@@ -47,8 +47,11 @@ test:
    host: localhost
    pool: 5
 
-production:
-   adapter: postgresql
-   database: smartbooks_production
-   pool: 5
-   timeout: 5000
+# production:
+#    adapter: postgresql
+#    encoding: unicode
+#    database: smartbooks_production
+#    username: rajsharma1612
+#    password: rajsharma1612
+#    host: localhost
+#    pool: 5

@@ -12,15 +12,18 @@
 
 ActiveRecord::Schema.define(version: 20160930132322) do
 
-  create_table "books", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "books", force: :cascade do |t|
     t.string   "title"
     t.string   "author"
     t.string   "category"
-    t.text     "description",  limit: 65535
-    t.text     "logo_url",     limit: 65535
+    t.text     "description"
+    t.text     "logo_url"
     t.string   "pdf_file_url"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end

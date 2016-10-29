@@ -49,9 +49,6 @@ test:
 
 production:
    adapter: postgresql
-   encoding: unicode
    database: smartbooks_production
-   username: rajsharma1612
-   password: rajsharma1612
-   host: localhost
    pool: 5
+   timeout: 5000

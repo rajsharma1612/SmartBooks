@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :books
   root 'welcome#index'
   get 'welcome/get_all_books' => 'welcome#get_all_books'
 

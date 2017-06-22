@@ -9,7 +9,7 @@ layout 'standard'
 
   def get_all_books
     # @books = Book.find(2);
-    @books = Book.where(:id => 1..3)
+    @books = Book.all
     logger.debug(@books.inspect)
     render :json => @books
   end
